@@ -86,7 +86,7 @@
 \usepackage{etoolbox}
 \usepackage{enumitem}
 \usepackage{mdframed}
-
+\usepackage{adjustbox}
 
 \ifczech
   \main@language{czech}

@@ -129,8 +129,8 @@ Tyto kritéria jsou klíčová, aby vytvořeny vzor mohl být označen za znalos
 Jedná se o jeden ze základních typu dolovacích úloh. Řadí se do kategorie deskriptivních úloh. Cílem je zde poskytnout stručný, souhrnný a výstižný popis určité množiny dat. Například ve firmě prodávající elektroniku můžou byt spotřebiče rozdělené do tříd: notebooky a chytré telefony, prostory firmy mohu rozdělené do tříd: prodejny a sklady. Tyto třídy je vhodné charakterizovat popisem, který je možné získat díky jednomu z následujících způsobů \cite{Han}.
 
 \begin{itemize}
-    \item \textit{Charakterizací dat} - výsledná třída je popsána sumarizaci jejich obecných vlastností. Platí, že jednoduchým dotazem z databáze se vybírají data odpovídající třídě.
-    \item \textit{Diskriminace dat} - výsledná třída je popsaná rozdíly mezi jednou nebo více třídami. Třídy, s kterým se porovnává, jsou nazývaný rozdílové.
+    \item \textit{Charakterizací dat} -- výsledná třída je popsána sumarizaci jejich obecných vlastností. Platí, že jednoduchým dotazem z databáze se vybírají data odpovídající třídě.
+    \item \textit{Diskriminace dat} -- výsledná třída je popsaná rozdíly mezi jednou nebo více třídami. Třídy, s kterým se porovnává, jsou nazývaný rozdílové.
 \end{itemize}
 
 \paragraph{Příklad 2.4.1} Charakterizace dat \newline
@@ -176,9 +176,9 @@ Kromě výše uvedeného příkladu klasifikace a predikce mají v praxi mnoho d
 Proces klasifikace se skládá ze tří kroků: trénování/učení, testování a aplikace. Obvykle je potřeba jistým způsobem upravit zdrojová data na vstupů před započetím procesu klasifikace. Základní úpravy jsou následující \cite{Han}:
 
 \begin{itemize}
-    \item Čištění dat - odstraňování chybějících hodnot.
-    \item Analýza významnosti - odstraňování atributů objektů, které jsou zpohledu klasifikace nepotřebné.
-    \item Transformace dat - převod dat na jiný formát (například kategorizace nebo normalizace hodnot)
+    \item Čištění dat -- odstraňování chybějících hodnot.
+    \item Analýza významnosti -- odstraňování atributů objektů, které jsou zpohledu klasifikace nepotřebné.
+    \item Transformace dat -- převod dat na jiný formát (například kategorizace nebo normalizace hodnot)
 \end{itemize}
 
 V první fázi, kdy probíhá trénování/učení, tak se analyzuje soubor dat. Tento soubor je označován jako treningová množina objektů. Pro jednotlivé objekty této množiny platí, že známe jejích třídu. Pomocí této vlastnosti je možné vytvořit klasifikační model, který dokáže prediktovat třídy neznámých objektů. Průběh fáze je ilustrovaná obrázkem \ref{faze-trenovani}. \cite{Bharati} 
@@ -270,11 +270,11 @@ Existuje několik metod, které lze využít při řešení klasifikačních úl
 
 
 \begin{itemize}
-    \item \textbf{Přesnost} - udává kolikrát správně model vybral třídu na nových neznámých vzorcích,
-    \item \textbf{Rychlost} - výpočetní složitost pro vygenerování a používání klasifikačního modelu,
-    \item \textbf{Robustnost} - schopnost vytvořit správný model i z neuplných údajů,
-    \item \textbf{Stabilita} - schopnost vytvořit správný model pro velké množství dat,
-    \item \textbf{Interpretovatelnost} - složitost daného modelu pro pochopení.
+    \item \textbf{Přesnost} -- udává kolikrát správně model vybral třídu na nových neznámých vzorcích,
+    \item \textbf{Rychlost} -- výpočetní složitost pro vygenerování a používání klasifikačního modelu,
+    \item \textbf{Robustnost} -- schopnost vytvořit správný model i z neuplných údajů,
+    \item \textbf{Stabilita} -- schopnost vytvořit správný model pro velké množství dat,
+    \item \textbf{Interpretovatelnost} -- složitost daného modelu pro pochopení.
 \end{itemize}
 
 \subsection*{Klasifikace pomocí rozhodovacích stromů}
@@ -294,8 +294,8 @@ Velmi důležitým rozhodnutím při tvorbě stromu je, v jakém pořadí se dot
 Dalším problémem při vytvářeni takového stromu i vlivem datového šumu je vznik větvi, které dělají strom mnohem složitější, ale i méně kvalitním z hlediska předpovědi.  Tim vzniká potřeba, aby se tyto větve odstranily. Základní metody na odstranění těchto větví jsou následující \cite{Han}:
 
 \begin{itemize}
-    \item \textbf{Prepruning} – odstranění přebytečných větev probíhá při tvorbě stromu. Tato metoda je rychlejší.
-    \item \textbf{Postpruning} - odstranění přebytečných větev probíhá až po jeho úplném vytvoření. Tato metoda je spolehlivější.
+    \item \textbf{Prepruning} -- odstranění přebytečných větev probíhá při tvorbě stromu. Tato metoda je rychlejší.
+    \item \textbf{Postpruning} -- odstranění přebytečných větev probíhá až po jeho úplném vytvoření. Tato metoda je spolehlivější.
 \end{itemize}
 
 
@@ -309,10 +309,10 @@ Tato klasifikační metoda provádí klasifikaci na principu založeny na statis
 Pro porozumění jednoduché bayesovké klasifikaci je zavedeno následující pojmy \cite{Han}:
 
 \begin{itemize}
-    \item $S$ - množina všech vzorků (trénovacích dat)
-    \item $C_1, C_2,...,C_m$ - jednotlivé třídy, do kterých jsou vzorky z množiny $S$ klasifikované. Symbol $m$ udává celkový počet těchto tříd.
-    \item $s_i$ - počet prvků z množiny $S$, které jsou klasifikované do třídy $C_i$, kde $i=1,...,m$
-    \item $A_1, A_2,...,A_n$ - jednotlivé atributy, pomocí kterých se bude klasifikovat
+    \item $S$ -- množina všech vzorků (trénovacích dat)
+    \item $C_1, C_2,...,C_m$ -- jednotlivé třídy, do kterých jsou vzorky z množiny $S$ klasifikované. Symbol $m$ udává celkový počet těchto tříd.
+    \item $s_i$ -- počet prvků z množiny $S$, které jsou klasifikované do třídy $C_i$, kde $i=1,...,m$
+    \item $A_1, A_2,...,A_n$ -- jednotlivé atributy, pomocí kterých se bude klasifikovat
     \item $X = (x_1,X_2,...,x_n)$, kde $x_i$ je hodnota atributu $A_i$ pro všechna $i=1,...,m$, značí testovací vzorek, který má být klasifikován do nějaké třídy.
     \item $P(C_i|X)$, kde $i=1,...,m$ udává podmíněnou pravděpodobnost toho, že libovolný vzorek padne do třídy $C_i$, pokud je známo, že vzorek má atributy shodné s prvkem $X$.
 \end{itemize}
@@ -361,8 +361,8 @@ kde $\theta$ je vnitřní konstanta daného neuronu označována jako bias a je 
 Počet neuronů a jejich vzájemné propojení v síti určuje takzvaná architektura (topologie) neuronové sítě. Existuje mnoho odlišných architektur, ale nejběžnější způsob je rozdělit síť do několika vrstev. Typ neuronu je určen konkrétní vrstvou. V zásadě můžeme rozlišovat dva hlavní typy architektur neuronových síti \cite{Dunham}:
 
 \begin{enumerate}
-    \item \textbf{Dopředná síť} - neurony lze vždy rozdělit do vrstev, které jsou uspořádány tak, že spoje mezi neurony vedou jen z jedné vrstvy do další vrstvy, takže se informace zpracovává jedním směrem od vstupu k výstupu. Tento typ se využívá v případě, kdy je známá kompletní vstupní informace.
-    \item \textbf{Rekurentní síť } - zde dochází k vytvoření cyklu takový nejjednodušším příkladem je zpětná vazba neuronu, jehož výstup je zároveň jeho vstupem. Signál, který přišel vstupní vrstvou, cirkuluje do doby, než se stav v síti neustáli. Když je stav ustálen, tak je možné přečíst výstup. Nejčastěji se využívá, když pro výsledek je důležité časová posloupnost vstupních dat.
+    \item \textbf{Dopředná síť} -- neurony lze vždy rozdělit do vrstev, které jsou uspořádány tak, že spoje mezi neurony vedou jen z jedné vrstvy do další vrstvy, takže se informace zpracovává jedním směrem od vstupu k výstupu. Tento typ se využívá v případě, kdy je známá kompletní vstupní informace.
+    \item \textbf{Rekurentní síť } -- zde dochází k vytvoření cyklu takový nejjednodušším příkladem je zpětná vazba neuronu, jehož výstup je zároveň jeho vstupem. Signál, který přišel vstupní vrstvou, cirkuluje do doby, než se stav v síti neustáli. Když je stav ustálen, tak je možné přečíst výstup. Nejčastěji se využívá, když pro výsledek je důležité časová posloupnost vstupních dat.
 \end{enumerate}
 
 Když se vybere architektura, typ učení a učící algoritmus, tak se vy tváří model neuronové sítě. Nejznámější modely neuronových sítí jsou sítě, které používají algoritmus \textbf{zpětného šíření} (v angličtině Backpropagation). 
@@ -677,7 +677,7 @@ Výsledek asociačních pravidel obou algoritmů je totožný a je vrácen v pod
 
 \begin{table}[]
     \centering
-    \small
+    \begin{adjustbox}{width=\linewidth,center}
     \begin{tabular}{lllrrrr}
 \toprule
 {} &       antecedents & consequents &  antecedent support &  consequent support &   support &  confidence \\
@@ -693,6 +693,7 @@ Výsledek asociačních pravidel obou algoritmů je totožný a je vrácen v pod
 8 &           (Scone) &    (Coffee) &   0.034548 &            0.478394 &  0.018067 &    0.522936 \\
 \bottomrule
 \end{tabular}
+\end{adjustbox}
     \caption{První devět pravidel knihovny mlxtend}
     \label{tab3}
 \end{table}
@@ -1020,7 +1021,7 @@ V první části se představí datová sada. Následně po ní následuje ukáz
 V závěru bude následovat zhodnocení experimentu.
 
 \subsection*{Datová sada o tučňácích žijících na souostroví Palmer Archipelag}
-Tato online\footnote{\url{https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data?select=penguins_size.csv}} dostupná datová sada byla vytvořená doktorkou Kristen Gorman a výzkumnou stanici Palmer na Antarktidě. Datová sada obsahuje celkem 344 záznamu. Každý záznam reprezentuje konkrétní tučňák v podobě 6 atributu jako pohlaví, váha, míry zobáku a ostrov, na kterém žijí. Atribut \verb|species| má 3 hodnoty: Adélie, Gentoo, Chinstrap. Jedná se o druh, do kterého patří jednotlivé záznamy. V tomto experimentu se tento atribut odstraní.
+Tato online\footnote{\url{https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data?select=penguins_size.csv}} dostupná datová sada byla vytvořená doktorkou Kristen Gorman a výzkumnou stanici Palmer na Antarktidě. Datová sada obsahuje celkem 344 záznamu. Každý záznam reprezentuje konkrétní tučňák v podobě 6 atributů jako pohlaví, váha, míry zobáku a ostrov, na kterém žijí. Atribut \verb|species| má 3 hodnoty: Adélie, Gentoo, Chinstrap. Jedná se o druh, do kterého patří jednotlivé záznamy. V tomto experimentu se tento atribut odstraní.
 
 Po načtení datové sady a její analýzu bylo zjištěno, že obsahuje nevalidní a chybějící hodnoty, které je potřeba odstranit. Dále datová sada má 2 kategorické atributy: pohlaví a ostrov. Hodnoty těchto atributu nahradíme za kvantitativní hodnoty.
 
@@ -1102,7 +1103,7 @@ dbscan_clusters = dbscan.fit_predict(X_normalized)
 Následně probíhá vyhodnocení této metody stejně jako v předchozích příkladech.
 
 \subsubsection*{Mlxtend}
-Jediný algoritmus, který nabízí tato knihovna pro shlukování, je metoda \textbf{k-Means}. Implementace je realizována pomocí třídy \verb|Kmeans()|, která přijímá jako parametr počet shluků, do kterých budeme zařazovat data. Využijeme znalost z předchozí části experimentu, a zde použijeme už rovnou hodnotu 3 pro počet shluků. 
+Jediný algoritmus, který nabízí tato knihovna pro shlukování, je metoda \textbf{k-means}. Implementace je realizována pomocí třídy \verb|Kmeans()|, která přijímá jako parametr počet shluků, do kterých budeme zařazovat data. Využijeme znalost z předchozí části experimentu, a zde použijeme už rovnou hodnotu 3 pro počet shluků. 
 
 \begin{mdframed}
 \begin{lstlisting}[language=Python]
@@ -1120,10 +1121,9 @@ Výsledek shlukování je zde úplně stejný jako v případě využití metody
 
 \subsubsection*{PyCaret}
 Pro shlukovou analýzu tato knihovna nabízí stejně algoritmy jako knihovna \textit{scikit-learn}. Pro zpracování datové sady je opět k dispozici funkce \verb|setup()|, které se předá datová sada, nastaví se argument \verb|normalize| na hodnotu \verb|True|, aby data byla normalizovaná. Jako poslední argument se nastaví
-atribut, který se bude ignorovat, aby se mohlo shlukovat bez něho. V tomto případě
-bude se jednat o atribut \verb|species|. 
+atribut, který se bude ignorovat, aby se mohlo shlukovat bez něho. V tomto případě se bude jednat o atribut \verb|species|. 
 
-Vytvoření modelu je realizováno pomocí funkce \verb|create_model()|, kde se určí metodu shlukování, která bude použitá. 
+Vytvoření modelu je realizováno pomocí funkce \verb|create_model()|, kde se určí metoda shlukování, která bude použitá. 
 
 \begin{mdframed}
 \begin{lstlisting}[language=Python]
@@ -1138,7 +1138,7 @@ dbscan = create_model('dbscan')
 \end{lstlisting}   
 \end{mdframed}
 
-Dále pomocí funkce \verb|plot_model()|, můžeme vykreslit různé typy grafu. Například pro k-means lze vykreslit graf typu \verb|elbow|, který reprezentuje nepřesnost shlukování. Zde je optmimální hodnota pro cílový počet shluků je 5, jak je vidět na obrázku \ref{kmeanspycaret}. 
+Dále pomocí funkce \verb|plot_model()|, můžeme vykreslit různé typy grafů. Například pro k-means lze vykreslit graf typu \verb|elbow|, který reprezentuje nepřesnost shlukování. Zde je optmimální hodnota pro cílový počet shluků 5, jak je vidět na obrázku \ref{kmeanspycaret}. 
 
 \begin{figure*}[h]\centering
   \centering
@@ -1147,7 +1147,7 @@ Dále pomocí funkce \verb|plot_model()|, můžeme vykreslit různé typy grafu.
   \label{kmeanspycaret}
 \end{figure*}
 
-Dále lze vykreslit výsledné shluky nastavením argumentu \verb|plot| na klíčové slovo\verb|cluster|. Výsledek lze vidět na obrázku \ref{kmeanspycaretclusters}.
+Dále lze vykreslit výsledné shluky nastavením argumentu \verb|plot| na klíčové slovo \verb|cluster|. Výsledek lze vidět na obrázku \ref{kmeanspycaretclusters}.
 
 \begin{figure*}[h]\centering
   \centering
@@ -1159,7 +1159,7 @@ Dále lze vykreslit výsledné shluky nastavením argumentu \verb|plot| na klí�
 V případě hierarchického shlukování implementace knihovny PyCaret vrací stejné výsledky
 jako implementace k-means. Oba dva algoritmy rozdělují data do 5 shluků, ale toto rozdělení není přesné, protože jsou jenom 3 druhy tučňáků. 
 
-Při implementaci shlukování založené na hustotě pomocí metody DBSCAN jsou data rozdělena do výsledných 9 shluků a vizualizace možné vidět na obrázku \ref{dbscanpycaretclusters}.
+Při implementaci shlukování založené na hustotě pomocí metody DBSCAN jsou data rozdělena do výsledných 9 shluků a vizualizace je možné vidět na obrázku \ref{dbscanpycaretclusters}.
 
 \begin{figure*}[h]\centering
   \centering
@@ -1169,7 +1169,7 @@ Při implementaci shlukování založené na hustotě pomocí metody DBSCAN jsou
 \end{figure*}
 
 \subsection*{Zhodnocení experimentu}
-Knihovna mlxtend nabízí jediný algoritmus k-means pro řešení shlukovcích úloh. Tento algoritmus dosahuje stejného výsledků jako algoritmus k-means knihovny scikit-learn. Algoritmy zařadili 321 z 333 ($ 96,37 \%$) záznamu správně. Hierarchického shlukování z knihovny scikit-learn vrátil jako výsledek 4 shluky, ale v jednom z shluku nachází jenom jeden bod (tučňák). Tento algoritmus zařadil 300 z 333 ($ 90,10 \%$) záznamu správně. Metoda DBSCAN zařadila 318 z 333 ($ 95,50 \%$) záznamu správně.
+Knihovna mlxtend nabízí jediný algoritmus k-means pro řešení shlukovcích úloh. Tento algoritmus dosahuje stejného výsledků jako algoritmus k-means knihovny scikit-learn. Algoritmy zařadili 321 z 333 ($ 96,37 \%$) záznamu správně. Hierarchického shlukování z knihovny scikit-learn vrátil jako výsledek 4 shluky, ale v jednom ze shluku se nachází jenom jeden bod (tučňák). Tento algoritmus zařadil 300 z 333 ($ 90,10 \%$) záznamu správně. Metoda DBSCAN zařadila 318 z 333 ($ 95,50 \%$) záznamu správně.
 
 Z toho se dá vyvodit, že jednotlivé druhy tučňáků vykazují mírné podobné vlastnosti. Nejvíc podobné mezi sebou jsou druhy Adélie a Chinstrap, protože se nejvíc překrývaly. 
 
@@ -1177,7 +1177,7 @@ Knihovna PyCaret pokrývá stejné algoritmy jako knihovna scikit-learn, ale vš
 
 \chapter{Zhodnocení jednotlivých knihoven}
 \label{zhodnoceni}
-Tato kapitola je věnována shrnutí a zhodnocení jednotlivých dostupných knihoven jazyka Python pro dolování dát z hlediska jejich podpory pro dané dolovací úlohy prezentované v této práci. Budou zde ukázané výhody a nevýhody jednotlivých knihoven na závěr bude doporučení, která knihovna je nejvhodnější.
+Tato kapitola je věnována shrnutí a zhodnocení jednotlivých dostupných knihoven jazyka Python pro dolování dát z hlediska jejich podpory pro dané dolovací úlohy prezentované v této práci. Budou zde ukázané výhody a nevýhody jednotlivých knihoven. Na závěr bude doporučení, která knihovna je nejvhodnější.
 
 \subsection*{Mlxtend}
 Tato knihovna je velice jednoduchá. Její hlavní výhodou je podpora pro řešení úloh, kde je
@@ -1187,7 +1187,7 @@ Její nevýhodou je, že pro klasifikaci a shlukovou analýzu nenabízí navíc 
 algoritmy, které by nenabízely ostatní knihovny. Dále při práci se vstupnými údaji je vždy potřeba upravit do speciální podoby. Knihovna je kompatibilní s nejnovější verzi jazyka Python.
 
 \subsection*{PyCaret}
-PyCaret pokrývá algoritmy, které zde byli prezentované. Podporuje dolování asociačních pravidel, klasifikaci a shlukovou analýzu. Spousta algoritmů, které nabízí jsou pravě převzaté z jiných knihoven jako například scikit-learn. Nabízí jednoduché rozhraní pro předzpracování dat, tvoření modelu a jejich analýzu. Tato knihovna je skvěla pro někoho, kdo se nechce zabývat tvorbou modelu, ale spíše chce zkoumat datovou sadu. 
+PyCaret pokrývá algoritmy, které zde byli prezentované. Podporuje dolování asociačních pravidel, klasifikaci a shlukovou analýzu. Spousta algoritmů, které nabízí jsou pravě převzaté z jiných knihoven jako například scikit-learn. Nabízí jednoduché rozhraní pro předzpracování dat, tvoření modelů a jejich analýzu. Tato knihovna je skvěla pro někoho, kdo se nechce zabývat tvorbou modelu, ale spíše chce zkoumat datovou sadu. 
 
 Nevýhodou muže byt nepřesné výsledky, které vytvoří, jak bylo vidět v podkapitole \ref{shlukovanalyza} při shlukové analýze. Knihovna je aktuálně kompatibilní s jazykem Python ve verzi 3.8.0.
 \subsection*{Scikit-learn}
