@@ -1,23 +1,19 @@
-# Dokumentace k projektu
+# Data Mining in Python
 
-Tato práce obsahuje 3 experimenty. Každý experiment se zaměřuje na jeden typ dolovací úlohy.  První experiment se zaměřuje na asociační pravidla, druhý na klasifikaci a třetí na shlukovou analýzu. 
+This repository contains 3 experiments. Each experiment focuses on one type of mining problem. The first experiment focuses on association rules, the second on classification and the third on cluster analysis. The aim is to compare how available Python libraries for data mining are coping with each type of data mining problem. The libraries that were used: **scikit-learn**, **mlxtend**, **PyCaret**.
 
-Experimenty byly realizované pomocí **Jupyter Notebooku** a musí běžet v prostředí jazyka Python ve verzí **3.8.0**.
+The experiments were implemented using **Jupyter Notebook** and must run in Python in version **3.8.0**.
 
-Potřebné balíčky k rozběhnutí experimentu: _notebook, scikit-learn, mlxtend, pycaret_, které se nainstaluji pomocí příkazu _pip3 install <jméno_balíčků>_. Další balíčky se nainstalují dodatečně jako závislost.
+The packages needed to run the experiment are _notebook, scikit-learn, mlxtend, pycaret_, which are installed using the _pip3 install <package_name>_ command. The other packages will be installed additionally as dependencies.
 
-# Obsah projektu 
+# Content of the repository
 
-**experimenty** - adresář obsahující jupyter notebooky se všemi zdrojovými kódy:
+**experiments** - a directory containing jupyter notebooks with all the source code:
     
-1. asociacni-pravidla-experiment.ipynb
-2. klasifikace-experiment.ipynb
-3. shlukova-analyza-experiment.ipynb
+1. association-rules-experiment.ipynb
+2. classification-experiment.ipynb
+3. cluster-analysis-experiment.ipynb
 
-**datasets** - adresář obsahující všechna zdrojová data pro experimenty
+**datasets** - directory containing all source data for experiments
 
-**technická-zpráva** - adresář obsahující zdrojové soubory potřebné na vytvoření technické zprávy
-
-**README.md** - dokumentace k projektu
-
-**bp.pdf** - technická zpráva ve formátu PDF (byla přeložená v prostředí Overleaf)
+**README.md** - documentation
