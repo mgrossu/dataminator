@@ -1,10 +1,27 @@
 # Data Mining in Python
 
-This repository contains 3 experiments. Each experiment focuses on one type of mining problem. The first experiment focuses on association rules, the second on classification and the third on cluster analysis. The aim is to compare how available Python libraries for data mining are coping with each type of data mining problem. The libraries that were used: **scikit-learn**, **mlxtend**, **PyCaret**.
+This repository contains three experiments, each focusing on a different type of data mining problem:
 
-The experiments were implemented using **Jupyter Notebook** and must run in Python in version **3.8.0**.
+1. **Association Rules**  
+2. **Classification**  
+3. **Cluster Analysis**
 
-The packages needed to run the experiment are _notebook, scikit-learn, mlxtend, pycaret_, which are installed using the _pip3 install <package_name>_ command. The other packages will be installed additionally as dependencies.
+The goal is to compare how various Python libraries handle these types of data mining tasks. The libraries used include **scikit-learn**, **mlxtend**, and **PyCaret**.
+
+## Setup
+
+The experiments are implemented using **Jupyter Notebook** and require Python version **3.8.0**.
+
+Required packages:  
+- `notebook`  
+- `scikit-learn`  
+- `mlxtend`  
+- `pycaret`  
+
+Install these via pip:  
+```bash
+pip3 install notebook scikit-learn mlxtend pycaret
+```
 
 # Content of the repository
 
