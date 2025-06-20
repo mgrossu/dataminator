@@ -23,14 +23,15 @@ Install these via pip:
 pip3 install notebook scikit-learn mlxtend pycaret
 ```
 
-# Content of the repository
+# Repository structure
 
-**experiments** - a directory containing jupyter notebooks with all the source code:
-    
-1. association-rules-experiment.ipynb
-2. classification-experiment.ipynb
-3. cluster-analysis-experiment.ipynb
-
-**datasets** - directory containing all source data for experiments
-
-**README.md** - documentation
+/data-mining-python
+├── experiments
+│   ├── association-rules-experiment.ipynb
+│   ├── classification-experiment.ipynb
+│   └── cluster-analysis-experiment.ipynb
+├── datasets
+│   ├── Rice_Cammeo_Osmancik.xlsx
+│   ├── bread-basket.csv
+│   └── penguins_size.csv
+└── README.md
