@@ -25,7 +25,7 @@ pip3 install notebook scikit-learn mlxtend pycaret
 
 # Repository structure
 ```
-/data-mining-python
+/dataminator
 ├── experiments
 │   ├── association-rules-experiment.ipynb
 │   ├── classification-experiment.ipynb
