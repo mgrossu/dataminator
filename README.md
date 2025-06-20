@@ -24,7 +24,7 @@ pip3 install notebook scikit-learn mlxtend pycaret
 ```
 
 # Repository structure
-
+```
 /data-mining-python
 ├── experiments
 │   ├── association-rules-experiment.ipynb
@@ -35,3 +35,4 @@ pip3 install notebook scikit-learn mlxtend pycaret
 │   ├── bread-basket.csv
 │   └── penguins_size.csv
 └── README.md
+```
